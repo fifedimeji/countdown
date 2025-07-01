@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+html, body {
+    margin: 0;
+    font-family: "Bitcount Grid Double", sans-serif;
+    color: #fff;
+    background: #333;
+    overflow: hidden;
+}
+
+.landing {
+    position: relative;
+    background-image: url(/img/countdownbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.landing-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.landing-inner h1 {
+    font-size: 50px;
+}
+
+.countdown {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 0.7;
+    background: #000;
+}
+
+.countdown div:first-child {
+    background: #FF851B;
+}
+
+.countdown span {
+    display: block;
+    font-size: 25px;
+}
+
+@media(max-width: 650px) {
+    .landing img {
+        width: 70%;
+    }
+
+    .landing h1 {
+        font-size: 40px;
+    }
+
+    .countdown {
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .countdown div{
+        width: 80%;
+        padding: 10px;
+        display: none;
+    }
+
+    .countdown div:first-child {
+        display: block;
+    }
+}
+}
+
+@media(max-height: 600px) {
+    .landing img {
+        width: 20%;
+    }
+
+    .countdown div {
+        display: none;
+    }
+
+    .countdown div:first-child {
+        display: block;
+    }
+}
+
+@media(max-height: 400px) {
+    .landing img {
+        width: 20%;
+        padding-bottom: 3px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .countdown div {
+        display: none;
+    }
+
+    .countdown div:first-child {
+        display: block;
+    }
+}
